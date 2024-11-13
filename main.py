@@ -18,13 +18,13 @@ def main(usr, pw):
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:74.0) Gecko/20100101 Firefox/76.0",
-        "Referer": "https://w1.v2free.net/auth/login",
+        "Referer": "https://w1.v2free.cc/auth/login",
     }
     client.post(login_url, data=data, headers=headers)
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:74.0) Gecko/20100101 Firefox/76.0",
-        "Referer": "https://w1.v2free.net/user",
+        "Referer": "https://w1.v2free.cc/user",
     }
     response = client.post(sign_url, headers=headers)
     msg = usr + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
